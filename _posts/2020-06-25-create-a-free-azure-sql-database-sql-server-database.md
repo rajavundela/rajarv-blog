@@ -3,10 +3,10 @@ title: Creating a Free Azure SQL Database (SQL Server Database)
 date: 2020-06-25T17:03:38.866Z
 last_modified_at: 2020-06-28T08:29:41.928Z
 tags:
-  - "# Azure"
+  - "#Azure"
 comments: true
 ---
-In this post, we go through how to create a free Azure SQL Database.
+In this post, we go through on how to create a free Azure SQL Database.
 
 [Azure SQL Database](https://docs.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview) runs on the stable version of Microsoft SQL Server database engine. If we follow the Microsoft Docs [tutorial](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal) on how to create an Azure SQL Database, there is no free tier available. The least tier is basic with approximately $5 US Dollar per month.
 
