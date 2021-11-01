@@ -13,4 +13,4 @@ categories:
   - ddvdvdvfdvdvdvv
 comments: true
 ---
-some content here. what's going on?
+some content here. what's going on? Added author bio.
