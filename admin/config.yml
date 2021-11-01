@@ -28,7 +28,7 @@ collections:
       - {label: "Update Date", name: 'last_modified_at', widget: 'datetime', dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm"}
       - {label: "Select Author", name: 'author', widget: 'select', options: ['Raja Vundela', 'Ed Carter']}
       - {label: "About Author", name: "author_profile", widget: ["boolean", "hidden"], default: true}
-      - {label: "Tags", name: 'tags', widget: 'list' hint: 'Use comma as delimiter'}
+      - {label: "Tags", name: 'tags', widget: 'list', hint: 'Use comma as delimiter'}
       - {label: "Categories", name: 'categories', widget: 'list', required: false}
       - {label: "Comments Toggle", name: 'comments', widget: "boolean", default: true, hint: 'Turn on/off comments for this post'}
       - {label: "Body", name: "body", widget: "markdown", hint: 'Main content goes here.'}
