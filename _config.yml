@@ -50,7 +50,7 @@ plugins:
 #   - vendor/ruby/
 
 # site theme(skin)
-minimal_mistakes_skin: "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 
 # Adding the below to _config.yml will assign the single layout and enable: author profile, reading time, comments, social sharing links, and related posts, for all posts.
 defaults:
