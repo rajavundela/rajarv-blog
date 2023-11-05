@@ -9,11 +9,11 @@ comments: true
 ## Checking Python Installation
 Starting from macOS Catalina, Python2 & Python3 is installed by default in macOS.You can check by entering `python3 --version` command in Terminal.
 
-![python3 version](/assets/images/uploads/2020-05-28-0.jpeg)
+![python3 version](/assets/images/uploads/2020-05-28-0.jpeg){: .align-center}
 
 Now Enter `python2 --version`  or `python --version` to check if python2 was installed. Remember entering just `python` defaults to python2.
 
-![python2 version](/assets/images/uploads/2020-05-28-1.jpeg)
+![python2 version](/assets/images/uploads/2020-05-28-1.jpeg){: .align-center}
 
 ## [](https://pip.pypa.io/en/stable/)Pip
 
@@ -60,6 +60,6 @@ For getting out of virtual environment to use your actual environment type 'deac
 ```shell
 deactivate
 ``` 
-![python virtual environment](/assets/images/uploads/2020-05-28-2.jpeg)
+![python virtual environment](/assets/images/uploads/2020-05-28-2.jpeg){: .align-center}
 
 Happy Coding!

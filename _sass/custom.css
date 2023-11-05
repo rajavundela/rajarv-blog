@@ -1,0 +1,15 @@
+/* minimal-mistakes.scss is the main css file.*/
+
+/* setting font sizes as original was too big */
+/* Desktop version */
+body {
+    font-size: 16px;
+  }
+  
+  /* Mobile version */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  

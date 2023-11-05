@@ -25,7 +25,7 @@ Go to [Azure Portal](https://portal.azure.com/) and click on **create a resource
 
 Click on create button to create **Web App + SQL** resource.
 
-![create Web App + SQL](/assets/images/uploads/2020-06-25-create.png)
+[![create Web App + SQL](/assets/images/uploads/2020-06-25-create.png)](/assets/images/uploads/2020-06-25-create.png)
 
 In **Web App + SQL create** Page, fill all the data that is required.
 
@@ -33,7 +33,7 @@ If you click on `SQL Database` you can create a new database or select existing 
 
 click on `SQL Database`
 
-![Web App + SQL data entry](/assets/images/uploads/2020-06-25-data-entry-database.png)
+[![Web App + SQL data entry](/assets/images/uploads/2020-06-25-data-entry-database.png)](/assets/images/uploads/2020-06-25-data-entry-database.png)
 
 select `create a new database`.
 
