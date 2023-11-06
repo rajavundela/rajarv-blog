@@ -79,9 +79,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/rajavundela/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/rajavundela"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter"
+    #   url: "https://twitter.com/rajavundela"
 
 # To enable site wide search
 search: true
@@ -127,12 +127,25 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/rajavundela/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/rajavundela"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter"
+    #   url: "https://twitter.com/rajavundela"
 
 # Adding _pages directory
 include: ["_pages"]
+
+words_per_minute: 100
+
+# hiding feed.xml
+atom_feed:
+  hide: true
+
+# Google Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-985YV154MR"
+    anonymize_ip: false # default
 
 # custom scripts for netlify cms identity
 head_scripts:
