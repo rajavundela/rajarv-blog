@@ -73,6 +73,9 @@ author:
   bio         : "Software developer."
   avatar      : "/assets/images/raja.jpg"
   links:
+    - label: "Toronto, ON"
+      icon: "fa fa-map-marker"
+      url: "https://g.co/kgs/vvWvxw"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rajavundela"
@@ -137,8 +140,8 @@ include: ["_pages"]
 words_per_minute: 100
 
 # hiding feed.xml
-atom_feed:
-  hide: true
+# atom_feed:
+#   hide: true
 
 # Google Analytics
 analytics:
