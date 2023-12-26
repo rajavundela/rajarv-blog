@@ -7,7 +7,8 @@ tags:
 comments: true
 ---
 
-<span style="color:red;">Hi there, these steps doesn't work anymore as <i>Web App + SQL</i> option was removed by Azure.</span>
+Hi there, these steps doesn't work anymore as **Web App + SQL** option was removed by Azure.
+{: .notice--danger}
 
 In this post, we go through on how to create a free Azure SQL Database.
 

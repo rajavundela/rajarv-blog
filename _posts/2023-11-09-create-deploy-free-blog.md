@@ -1,18 +1,23 @@
 ---
 title: "How to create a complete blog website and host for free"
 date: 2023-11-09
-last_modified_at: 2023-11-09
+last_modified_at: 2023-12-26
 tags:
   - "Blog"
   - "Hosting"
 comments: true
+# header:
+#   image: /assets/images/header-blog-post-3.jpg
+#   image_description: "A description of the image"
+#   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
 In this post, we go through on how to set up a blog/portofolio website with [Jekyll](https://jekyllrb.com/) and host the website on [Netlify](https://www.netlify.com/) for completely free. No coding required guys!
 
 ## Introduction
 
-[Jekyll](https://jekyllrb.com/) is a blog-aware static site generator written in Ruby which we use to build our website and we deploy our site to [Netlify](https://www.netlify.com/). Netlify is primarily used for serverless application hosting and they have a generous **100GB free traffic per month**😊 which is totally helpful for starters. Not just Netlify, [Azure Static Web App](https://azure.microsoft.com/en-ca/products/app-service/static), [Github Pages](https://pages.github.com/) and others offer 100GB free traffic. 
+[Jekyll](https://jekyllrb.com/) is a blog-aware static site generator written in Ruby which we use to build our website and we deploy our site to [Netlify](https://www.netlify.com/). Netlify is primarily used for serverless application hosting and they have a lot of add-ons like forms to hook up with our website later, free SSL certificate and DNS Server management and they also offer **100GB free traffic per month**😊. Some alternative hosting options to Netlify are [Azure Static Web App](https://azure.microsoft.com/en-ca/products/app-service/static), [Github Pages](https://pages.github.com/) and others.
+In this post, I'd be covering deployment to Neltify only.
 
 Taking off a server and using a static website has huge benefits.
 * Don't have to pay for a expensive server to host
@@ -23,7 +28,7 @@ Taking off a server and using a static website has huge benefits.
 
 ### Install Jekyll on Windows/Linux/Mac
 
-Follow the [installion](https://jekyllrb.com/docs/installation/) instructions listed on Jekyll website to install Ruby languge on your desktop and install Jekyll, bundler as gems. <br>For windows, run the command `bundle add webrick` to add webrick gem after initializing the project so that you don't run into webrick errors that come in windows when you run the website.
+Follow the [installion](https://jekyllrb.com/docs/installation/) instructions listed on Jekyll website to install Ruby languge on your desktop and install Jekyll, bundler as gems.
 
 ### Initialize the project
 
@@ -44,9 +49,18 @@ To run and test the website on local server, run the below command and go to [ht
 bundle exec jekyll serve
 ```
 
+If you see any [Depreciation Warnings](https://github.com/jekyll/jekyll/issues/9427) in the terminal after running `bundle exec jekyll serve`, Don't worry and please ignore them as it won't affect our website.
+{: .notice--warning}
+
+<!-- **Note:** For windows, run the command `bundle add webrick` in terminal to add webrick gem after initializing the project if the local server doesn't start and throws webrick error.
+{: .notice--info} -->
+
+Also, Use Code Editor like [VS Code](https://code.visualstudio.com/) as it makes our development flow very smooth with features like integrated Terminal and code highlighting and so on..
+{: .notice--info}
+
 ### Use theme Minimal Mistakes
 
-The easiest way to build our website is to use popular Jekyll theme [Minimal mistakes](https://github.com/mmistakes/minimal-mistakes). This theme has lot of documentation and customization options and I believe it fits all your blog needs. All you have to do is edit one file `_config.yml` to do customizations for our website.
+The easiest way to build our website is to use a [Jekyll theme](https://github.com/topics/jekyll-theme) and [Minimal mistakes](https://github.com/mmistakes/minimal-mistakes) theme has lot of documentation and customization options and I believe it fits all your blog needs. All you have to do is edit one file `_config.yml` to do most customizations for our website.
 
 There are a couple ways to install the theme. But I'd recommend gem based installion as it is easy to update the theme in the future.
 
@@ -54,12 +68,12 @@ There are a couple ways to install the theme. But I'd recommend gem based instal
    ```ruby
    gem "minimal-mistakes-jekyll"
    ```
-1. To install Minimal Mistakes theme as gem and update existing gems, type below bundler command in
+2. To install Minimal Mistakes theme as gem and update existing gems, type below bundler command in
    terminal.
    ```bash
    bundle
    ```
-1. Now, change the default theme from `minima` to `minimal-mistakes-jekyll`in `_config.yml` file to set your theme to Minimal Mistakes.
+3. Now, change the default theme from `minima` to `minimal-mistakes-jekyll`in `_config.yml` file to set your theme to Minimal Mistakes.
    ```yaml
    theme: minimal-mistakes-jekyll
    ```
@@ -76,7 +90,8 @@ There are a couple ways to install the theme. But I'd recommend gem based instal
 1. Change the `layout: post` in `YYYY-MM-DD-welcome-to-jekyll.markdown` to `layout: single`
 1. Remove `about.markdown`
 
-Now, run the website with `bundle exec jekyll serve` and go to [http://localhost:4000](http://localhost:4000) to check the changes.
+Now, run the website with `bundle exec jekyll serve` and go to [http://localhost:4000](http://localhost:4000) to check the changes.<br>
+Press `Ctrl + C` to stop local server.
 
 ### Customize the website
 
@@ -143,6 +158,10 @@ git add .
 git commit -m "your-commit-message"
 git push
 ```
+
+For some reason, the changes to `_config.yml` won't load automatically when using Minimal Mistakes and you have to stop and start local server to check your changes locally on the website.
+{: .notice--warning}
+
 Netlify will automatically deploy your new changes whenever there's a change in Github repository.
 
-Hope you enjoyed this post. If you have any comments or need help type them below, I'll reply to every single one of them.
+Hope you enjoyed this post. If you have any comments/suggestions on this post or need help type them below, I'll reply to every single one of them.
